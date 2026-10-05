@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include "parsing.h"
-#include "parsing.c"
 
 int main(void)
 {
@@ -28,7 +27,7 @@ int main(void)
         {
             printf("Good morning\n");
         }
-        else if(strcmp(line, "ls") == 0)
+        else if(strstr(line, "ls") != NULL)
         {
             parsing(line);
         }

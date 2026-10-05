@@ -1,5 +1,5 @@
-#ifndef PARSE_H
-#define PARSE_H
+#ifndef PARSING_H
+#define PARSING_H
 
 typedef struct
 {
@@ -10,4 +10,4 @@ typedef struct
 
 int parsing(const char *line);
 
-#endif /* PARSE_H */
+#endif /* PARSING_H */

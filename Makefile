@@ -16,10 +16,13 @@ NAME = mini_shell.out
 SRC = src/main.c \
 	  src/parsing.c
 
+all: $(NAME)
+
 # Convierte por ejemplo src/main.c --> src/main.o
 OBJ = $(SRC:.c=.o)
 
-all: $(NAME)
+# Para que make recompile lo necesario cuando cambie un .h
+$(OBJ): include/parsing.h
 
 # Compila el programa
 $(NAME): $(OBJ)
